@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ImmobilierPro - Vente et Location</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <!--  Nouveaux styles pour le logo  -->
+            <div class="logo-container">
+                <img src="d:\first project\Capture décran 2025-05-28 232509.png" alt="AMEN Immobilier" class="logo-img">
+                <div class="logo-text">AMEN<span>Immobilier</span></div>
+             </div>
+            <ul class="nav-links">
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Acheter</a></li>
+                <li><a href="#">Louer</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#" class="cta-button">Espace Pro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Trouvez la propriété de vos rêves</h1>
+            <p>Plus de 10 000 biens immobiliers disponibles à l'achat et à la location</p>
+            <div class="search-bar">
+                <input type="text" placeholder="Rechercher par ville, quartier...">
+                <select>
+                    <option value="buy">Acheter</option>
+                    <option value="rent">Louer</option>
+                </select>
+                <button><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <h2>Pourquoi choisir ImmobilierPro ?</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-home"></i>
+                </div>
+                <h3>Large sélection</h3>
+                <p>Plus de 10 000 biens disponibles dans toute la France, des studios aux châteaux.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-euro-sign"></i>
+                </div>
+                <h3>Meilleurs prix</h3>
+                <p>Nous négocions pour vous les meilleurs prix du marché grâce à notre réseau étendu.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3>Sécurité garantie</h3>
+                <p>Toutes nos transactions sont sécurisées et conformes à la législation en vigueur.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Properties for Sale -->
+    <section class="properties">
+        <div class="section-header">
+            <h2>Nos dernières offres à vendre</h2>
+            <a href="#" class="cta-button">Voir plus</a>
+        </div>
+        <div class="properties-grid">
+            <div class="property-card">
+                <div class="property-image">
+                    <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Maison moderne">
+                </div>
+                <div class="property-info">
+                    <div class="property-price">450 000 €</div>
+                    <div class="property-address">12 Rue des Lilas, Paris 75016</div>
+                    <div class="property-features">
+                        <span><i class="fas fa-bed"></i> 4 chambres</span>
+                        <span><i class="fas fa-bath"></i> 2 sdb</span>
+                        <span><i class="fas fa-ruler-combined"></i> 120 m²</span>
+                    </div>
+                </div>
+            </div>
+            <div class="property-card">
+                <div class="property-image">
+                    <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Appartement moderne">
+                </div>
+                <div class="property-info">
+                    <div class="property-price">275 000 €</div>
+                    <div class="property-address">45 Avenue Montaigne, Lyon 69006</div>
+                    <div class="property-features">
+                        <span><i class="fas fa-bed"></i> 3 chambres</span>
+                        <span><i class="fas fa-bath"></i> 1 sdb</span>
+                        <span><i class="fas fa-ruler-combined"></i> 75 m²</span>
+                    </div>
+                </div>
+            </div>
+            <div class="property-card">
+                <div class="property-image">
+                    <img src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Loft industriel">
+                </div>
+                <div class="property-info">
+                    <div class="property-price">320 000 €</div>
+                    <div class="property-address">8 Rue de la République, Marseille 13001</div>
+                    <div class="property-features">
+                        <span><i class="fas fa-bed"></i> 2 chambres</span>
+                        <span><i class="fas fa-bath"></i> 1 sdb</span>
+                        <span><i class="fas fa-ruler-combined"></i> 65 m²</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Properties for Rent -->
+    <section class="properties" style="background-color: white;">
+        <div class="section-header">
+            <h2>Nos dernières offres à louer</h2>
+            <a href="#" class="cta-button">Voir plus</a>
+        </div>
+        <div class="properties-grid">
+            <div class="property-card">
+                <div class="property-image">
+                    <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Appartement à louer">
+                </div>
+                <div class="property-info">
+                    <div class="property-price">1 200 DNT/mois</div>
+                    <div class="property-address">22 Rue de Rivoli, Paris 75004</div>
+                    <div class="property-features">
+                        <span><i class="fas fa-bed"></i> 2 chambres</span>
+                        <span><i class="fas fa-bath"></i> 1 sdb</span>
+                        <span><i class="fas fa-ruler-combined"></i> 55 m²</span>
+                    </div>
+                </div>
+            </div>
+            <div class="property-card">
+                <div class="property-image">
+                    <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Studio à louer">
+                </div>
+                <div class="property-info">
+                    <div class="property-price">650 €/mois</div>
+                    <div class="property-address">5 Rue du Vieux Port, Marseille 13001</div>
+                    <div class="property-features">
+                        <span><i class="fas fa-bed"></i> 1 chambre</span>
+                        <span><i class="fas fa-bath"></i> 1 sdb</span>
+                        <span><i class="fas fa-ruler-combined"></i> 30 m²</span>
+                    </div>
+                </div>
+            </div>
+            <div class="property-card">
+                <div class="property-image">
+                    <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Maison à louer">
+                </div>
+                <div class="property-info">
+                    <div class="property-price">1 800 €/mois</div>
+                    <div class="property-address">18 Avenue des Ternes, Bordeaux 33000</div>
+                    <div class="property-features">
+                        <span><i class="fas fa-bed"></i> 3 chambres</span>
+                        <span><i class="fas fa-bath"></i> 2 sdb</span>
+                        <span><i class="fas fa-ruler-combined"></i> 90 m²</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>ImmobilierPro</h3>
+                <p>Votre partenaire immobilier de confiance depuis 2005.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Liens utiles</h3>
+                <ul>
+                    <li><a href="#">Acheter un bien</a></li>
+                    <li><a href="#">Louer un bien</a></li>
+                    <li><a href="#">Estimation gratuite</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 15 Rue de la Paix, Paris 75002</p>
+                <p><i class="fas fa-phone"></i> 01 23 45 67 89</p>
+                <p><i class="fas fa-envelope"></i> contact@immobilierpro.fr</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 ImmobilierPro. Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
+</html>
