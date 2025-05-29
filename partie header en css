@@ -1,0 +1,140 @@
+/* ===== Compact Header ===== */
+header {
+    box-shadow: var(--shadow);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    background: white;
+    height: 60px; /* Fixed header height */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.4rem 5%; /* Reduced padding */
+    max-width: 1400px;
+    margin: 0 auto;
+    height: 100%; /* Full height of header */
+}
+
+.logo {
+    font-size: 1.4rem; /* Smaller text size */
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 8px; /* Space between logo and text */
+}
+
+.logo img {
+    height: 36px; /* Smaller logo */
+    width: auto; /* Maintain aspect ratio */
+}
+
+.logo span {
+    color: var(--primary);
+}
+
+.logo .highlight {
+    color: var(--secondary);
+}
+
+.nav-links {
+    display: flex;
+    gap: 1rem; /* Reduced gap between links */
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--dark);
+    font-weight: 600; /* Bolder font */
+    font-size: 0.9rem; /* Smaller font size */
+    padding: 0.4rem 0.8rem; /* Compact padding */
+    border-radius: 4px; /* Subtle rounded corners */
+    transition: all 0.2s ease; /* Smooth transition */
+    position: relative;
+}
+
+.nav-links a:hover {
+    color: var(--primary);
+    background: rgba(42, 100, 150, 0.08); /* Light hover background */
+}
+
+.nav-links a:hover::after {
+    width: 100%; /* Full underline on hover */
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: var(--primary);
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+/* Active link indicator */
+.nav-links a.active {
+    color: var(--primary);
+    background: rgba(42, 100, 150, 0.1);
+}
+
+.nav-links a.active::after {
+    width: 100%; /* Full underline for active state */
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 1.3rem; /* Smaller menu icon */
+    color: var(--dark);
+}
+
+.hero {
+    margin-top: 60px; /* Reduced margin to match header height */
+}
+
+/* Mobile menu adjustments */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+    
+    .nav-links {
+        position: fixed;
+        top: 60px; /* Adjusted position */
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 60px);
+        background: white;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem 0;
+        transition: left 0.3s ease;
+        gap: 0;
+    }
+    
+    .nav-links.active {
+        left: 0;
+    }
+    
+    .nav-links li {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .nav-links a {
+        display: block;
+        padding: 0.8rem 1rem;
+        border-radius: 0;
+    }
+    
+    .nav-links a::after {
+        display: none; /* Hide underline on mobile */
+    }
+}
