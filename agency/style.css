@@ -569,3 +569,268 @@ footer {
 .footer-logo-text span {
     color: var(--secondary);
 }
+/* Styles spécifiques à la page villas */
+.villas-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+    background-size: cover;
+    background-position: center;
+    padding: 150px 0;
+    text-align: center;
+    color: white;
+}
+
+.villas-hero .hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.villas-hero .hero-content p {
+    font-size: 1.5rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Filtres */
+.property-filter {
+    background-color: #f8f9fa;
+    padding: 30px 0;
+}
+
+.filter-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.filter-form {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.filter-group {
+    flex: 1;
+    min-width: 200px;
+}
+
+.filter-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.filter-form select,
+.filter-form input[type="number"] {
+    width: 100%;
+    padding: 12px 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.filter-btn {
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 44px;
+}
+
+.filter-btn:hover {
+    background-color: #3498db;
+}
+
+.reset-btn {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 44px;
+}
+
+.reset-btn:hover {
+    background-color: #c0392b;
+}
+
+/* Liste des villas */
+.villas-list {
+    padding: 60px 20px;
+}
+
+.property-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.villa-card {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.villa-card:hover {
+    transform: translateY(-10px);
+}
+
+.property-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: #e74c3c;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    z-index: 2;
+}
+
+.property-img {
+    height: 250px;
+    overflow: hidden;
+}
+
+.property-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.villa-card:hover .property-img img {
+    transform: scale(1.1);
+}
+
+.property-info {
+    padding: 20px;
+    background: white;
+}
+
+.property-info h3 {
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.property-location {
+    color: #7f8c8d;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.property-features {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+    padding: 15px 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+.property-price {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #e74c3c;
+    margin: 15px 0;
+}
+
+.property-link {
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.property-link:hover {
+    background-color: #2980b9;
+}
+
+/* CTA Section */
+.villas-cta {
+    background-color: #2c3e50;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.cta-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.cta-content p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto 30px;
+}
+
+.cta-btn {
+    background-color: #e74c3c;
+    color: white;
+    padding: 15px 40px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.cta-btn:hover {
+    background-color: #c0392b;
+}
+
+/* Message aucun résultat */
+.no-results {
+    text-align: center;
+    grid-column: 1 / -1;
+    font-size: 1.2rem;
+    color: #7f8c8d;
+    padding: 40px 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .villas-hero .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .property-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .filter-form {
+        flex-direction: column;
+    }
+    
+    .filter-group {
+        width: 100%;
+    }
+    
+    .filter-btn,
+    .reset-btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
